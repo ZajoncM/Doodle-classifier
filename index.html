@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="canvas">
+      <!-- Our sketch will go here! -->
+    </div>
+    <div>
+      <button class="btn btn-success" id="train">Trenuj</button>
+      <button class="btn btn-primary" id="guess">Zdecyduj</button>
+      <button class="btn btn-success" id="generate">Generuj</button>
+      <button class="btn btn-warning" id="clear">Wyczyść</button>
+    </div>
+    <span class="alert alert-primary" id="training-alert" role="alert"
+      >Trwa trenowanie...</span
+    >
+    <span id="output" class="alert alert-success" role="alert"
+      ></span>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
+      integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/model.js"></script>
+    <script src="./scripts/dataprep.js"></script>
+    <script src="./scripts/sketch.js"></script>
+    <script src="./scripts/dataObject.js"></script>
+  </body>
+</html>
